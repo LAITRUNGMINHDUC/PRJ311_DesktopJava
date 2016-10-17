@@ -1,0 +1,11 @@
+1. Sử dụng SplitPane:
+- Ở mỗi bên chỉ sử dụng được 1 component
+- Cho nên, muốn có nhiều component thì phải add Panel vô.
+
+2. JFileChooser
+- 
+
+3. Lập trình đồ họa phụ thuộc vào phần quản lý màu hệ điều hành. Và phần này thì phụ thuộc vào phần cứng.
+
+4. "Nimbus" Look And Feel (Theme):
+- Là dạng L&F của Java phụ thuộc vào hệ điều hành.

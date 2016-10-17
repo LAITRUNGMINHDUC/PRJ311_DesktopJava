@@ -1,0 +1,21 @@
+1. JTable() 
+- Listener --> Controller
+- JTable --> View
+- Dữ liệu được thao tác trên Model:
+	+ Vector
+	+ Array
+- Sau khi chỉnh sửa, chạy method UpdateUI() để update lại view.
+
+2. Chiều của Array:
+- Là số lượng chỉ số để xác định được phần tử.
+- Array đa chiều ==> Array của Array
+
+3. Các Event của Mouse:
+- MouseClicked
+	+ MousePressed
+	+ MouseReleased
+- Thông thường người ta dùng MouseClicked là đủ. Trong trường hợp muốn tạo ứng dụng Drag N Drop thì mới dùng 2 phương thức kia riêng biệt.
+
+4. Tìm hiểu về Edge Case
+
+5. 

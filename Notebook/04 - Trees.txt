@@ -1,0 +1,23 @@
+1. Last path component:
+- Node 
+- User object
+
+2. Get Selection path:
+- Lấy ra đường đi đến Last path component.
+
+3. toString Tree:
+- Trong Java đã thực hiện method toString cho Tree, muốn sửa lại thì Override lại.
+
+4. Tại sao lại có phương thức "toString"?
+- Mang tính "ngữ nghĩa" nhiều hơn là giá trị mang lại của phương thức.
+- Mục đích: Tạo tên gọi cho đối tượng
+
+5. Lập trình rõ nghĩa dựa trên Semantic.
+
+6. Khi load dữ liệu từ Text file, nên "Expand tree" cho Level 1. Nếu không, nhầm lẫn về blank tree sẽ xảy ra.
+
+7. NULL là 0x00
+
+8. 
+
+Deadlines: 21/09/2016

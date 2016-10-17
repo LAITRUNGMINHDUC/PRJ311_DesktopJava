@@ -1,0 +1,2 @@
+java Server.Program
+pause

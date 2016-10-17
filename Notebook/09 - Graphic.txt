@@ -1,0 +1,27 @@
+1. Hình ảnh trên máy tính được chia thành 2 loại:
+- Raster: Dạng ảnh trải theo lưới (Grid of pixel)
+	+ Bitmap
+	+ PNG
+	+ Dib
+- Vector: Trải qua 2 bước
+	+ Hình thành outline (Gồm trắng/ đen)
+	+ Đổ màu lên vector
+		+ Mỗi khi Zoom In, Out thì sẽ outline lại và đổ màu lại.
+
+2. (x, y) = (0, 0) là góc trái màn hình.
+
+3. (0,0,0) là Đen - (255,255,255) là Trắng - (255, 0, 0) là Đỏ
+
+4. Dùng điểm ảnh (Pixel) thì có thể bị chồng ảnh (Zoom in) hoặc bị giãn ảnh (Zoom out). Thường được gọi là bể.
+
+5. Cùng độ phân giải, với sự hỗ trợ của card màn hình thì biết được "sắc nét".
+
+6. Hệ trục tọa độ của device khác với hệ trục truyền thống (ngược lại) 
+==> Khi biểu diễn thì biểu diễn cho người xem theo truyền thống, nhưng xử lý thì phải biểu diễn trên trục của thiết bị.
+
+7. Tại sao trục tọa độ của device lại ngược với trục truyền thống?
+- Bắt nguồn từ màn hình CRT quét từ trái qua phải, từ trên xuống dưới.
+
+8. Color (int r, int g, int b, int a):
+- int a là alpha: level of transperency.
+

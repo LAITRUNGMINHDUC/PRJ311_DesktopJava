@@ -1,0 +1,33 @@
+1. Java và C# cơ bản kiến trúc là Cross-platform. Nhưng phụ thuộc vào platform có "thèm" hỗ trợ hay không.
+
+2. Cơ chế thực hiện tính đa hình của Java dựa trên Virtual Table của C++.
+
+3. Tại sao main phải có static?
+- Nếu trong một class có nhiều constructor, mà để main không static, thì làm sao Compiler biết được constructor nào để gọi, và gọi main?
+
+https://goo.gl/forms/5uBMkfh0Ub56WSpx2
+
+4. Hyper-Text là gì?
+- Là Text 
+- Nhưng không chỉ là Text --> Nó còn hỗ trợ các đa phương tiện khác.
+- (Tìm hiểu về HTML)
+
+5. Khi một ứng dụng được chạy thì được hệ điều hành focus, khi focus sẽ được re-paint. Muốn xử lý re-paint thì phải override đúng phương thức cho đối tượng.
+
+6. Khái niệm "Effectively final":
+- Tức là khai báo biến mà không cần ghi final.
+- Có mặt từ Java 8.
+- Chỉ sử dụng được khi biến chỉ được gán giá trị một lần. Nếu gán lại lần nữa thì sẽ báo lỗi.
+
+7. Kỹ thuật MẶT NẠ:
+- MẶT NẠ là chuỗi bit có độ dài bằng với chuỗi bit ban đầu và có giá trị bằng 1 tại vị trí cần xem xét.
+	- Muốn KT chẵn/ lẻ thì lấy chuỗi ban đầu AND với MẶT NẠ.
+	- Muốn KT là lũy thừa của 2 thì dùng phép dịch và MẶT NẠ.
+
+8. Overflow:
+- 
+
+9. Kỹ thuật Reflection (Reverse Engineering) trong Java
+
+JDBC: DAO (Data Access Object)
+ORM(Object Relational Mapping): Hibernate

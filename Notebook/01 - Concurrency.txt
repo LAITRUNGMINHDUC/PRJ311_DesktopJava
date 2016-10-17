@@ -1,0 +1,70 @@
+1. Concurrency VS Parallel:
+- Khác nhau
+- Chuyển đổi giữa các tiến trình "rất rất nhanh" --> tưởng chừng như song song.
+
+2. ALU:
+- 1 phép toán : 2 toán hạng - 1 toán tử.
+- Tại 1 thời điểm chỉ chạy 1 phép toán
+
+3. Thread:
+- Là đoạn code thực hiện một tác vụ nào đó TRONG PROCESS.
+- Khi Start Thread 
+	--> Không chạy ngay (Chỉ chuyển sang trạng thái READY)
+	--> Thread chỉ chạy khi Run() được chạy
+	--> Được chạy khi Scheduler cho chạy.
+- Do cơ chế Time Slicing --> Thread phải chờ.
+
+4. Multi-thread:
+- Phụ thuộc vào HĐH có đa nhiệm hay không.
+
+5. Tại sao lại có class Thread, lại có cả interface Runnable, dù Thread implement Runnable?
+- Do cơ chế của Java chỉ cho phép đơn thừa kế.
+- Nếu muốn một Class chạy như một Thread, và lại muốn kế thừa từ class khác thì phải implement Runnable.
+- (Sử dụng Callable())
+
+6. Tại sao khi chạy Thread phải dùng method Start() mà không dùng Run()?
+- Nếu gọi Run() thì method sẽ chạy chung với tiến trình chính 
+	--> Không còn là Thread.
+- Gọi Start() --> Có cơ chế Scheduler để thực hiện Thread.
+
+7. Deamon Thread và Non-Deamon Thread:
+- setDeamon(true):
+	+ MainThread dừng thì các Deamon Thread dừng theo (ngắt luôn).
+	+ Ứng dung:
+		- Tính năng AutoSave định kỳ chạy mỗi 5 giây. Nếu để non-Deamon thì chạy hoài.
+- setDeamon(false):
+	+ MainThread dừng thì các Deamon Thread KHÔNG DỪNG
+	+ Ứng dụng:
+		- Tiến trình AntiVirus
+		- Tính năng Save --> Để khi Save xong hết thì mới được dừng.
+
+8. Sự khác biệt của Suspended/ Sleeeping/ Blocked
+- Suspended: Dừng hẳn thread và trả tài nguyên.
+- Sleeping: Dừng nhưng không trả tài nguyên.
+- Blocked: Do IO
+
+9. Non-race condition / Race condition
+- Non-race condition: Là tình huống "lý tưởng" khi mỗi Thread truy cập tài nguyên riêng, không đụng chạm lẫn nhau.
+- Race condition: Là tình huống các Thread "tranh nhau" 1 nguồn tài nguyên --> Dẫn đến kết quả không mong đợi.
+
+10. Synchronized:
+- Mỗi object chỉ có một LOCK()
+- Khi Thread nhận được LOCK() thì nó sẽ giữ LOCK() cho tới lúc Method được thực hiện xong.
+- Nếu:
+ 	+ Method 1 có Synchronized, Method 2 có Synchronized
+ 	+ Thread 1 gọi Method1, Thread2 gọi Method2
+ 	+ Thread 1 đoạt LOCK()
+ 	==> Thread 2 KHÔNG THỂ GỌI được Method 2.
+
+ 11. Scheduler:
+ - 
+
+ 12. Deadlock:
+ - 
+
+ 13. Deadlock solution:
+ - "Cái gì không lấy được thì đừng có giữ."
+ - Giải quyết bằng wait() và notify()
+ 	--> Chỉ sử dụng wait() và notify() khi method có synchronized.
+
+ NOTE: Làm bài Philosophers.

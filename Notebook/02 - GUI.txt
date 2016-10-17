@@ -1,0 +1,42 @@
+1. Cơ chế xử lý Event:
+- Chọn Listener tương ứng
+- Hiện thực Event Handler
+- Đăng ký Component với Listener
+
+2. Quy ước:
+- Loại + Tên
+- VD: btnOK
+
+3. Annonymous:
+- new ActionListener() không gọi là new Interface
+	--> Gọi là new một Class mà Class đó implements Interface ActionListener()
+
+4. JOptionPane.showMessageDialog(null, "Hello World"); nghĩa là gì?
+- null ở đây nghĩa là "this" của Form cha
+
+5. Code phát sinh:
+- NetBeans phát sinh code khi click vào components.
+- Code được phát sinh nằm trong initComponents()
+
+6. Listener (Tìm hiểu thêm)
+- Dưới góc nhìn hệ điều hành, Listener là Function Pointer.
+- Khi có sự kiện phát sinh, gọi Callback.
+- Người ta dùng Function Pointer vì có thể truyền vào như một tham số của một hàm.
+
+7. Khi click chọn textArea, NetBeans chọn jScrollPage chứ ko phải textArea. Phải nhấn Navigator (Inspect) để tìm textArea.
+
+8. Sử dụng BtnGroup để đưa 2 btnRadio vào, dễ dàng chọn lựa qua lại và hợp lý (Chỉ chọn 1 option).
+
+9. Event: WindowsClosed và WindowsClosing:
+- WindowsClosing: Thường dùng để confirm lại thông tin. 
+- WindowsClosed: Hoạt động xong là tắt ngay.
+
+10. Ký tự WhiteSpace: 
+- Spacebar
+- New line (\n)
+- \t
+- New feed (\f) --> Dùng trong máy in
+===> Gọi là \s
+
+11. Nguyên lý DRY
+- Don't Repeat Yourself

@@ -1,0 +1,17 @@
+1. Remote: là 2 tiến trình chạy trên 2 máy khác nhau.
+
+2. Mô hình RMI chỉ có trên Java.
+
+3. Góc nhìn của lập trình viên dùng RMI: Gọi Hàm
+- Server cung cấp Service cho Client dưới dạng Method.
+
+4. Bất kỳ một NNLT nào cũng có các kiểu dữ liệu:
+- Primitive (Built-in) type
+- Reference (User-defined) type
+
+5. Tham chiếu (Reference) là gì?
+- Là thông tin giúp xác định một cái gì đó.
+- Constructor có nhiệm vụ:
+	+ Lấy địa chỉ trong Heap trả về cho biến tham chiếu.
+
+6. Marshalize = Serialize: Đóng gói thành Object

@@ -1,0 +1,42 @@
+1. Giá trị cố định (addGap) gây ra giao diện lệch.
+
+2. Cơ chế Method Chaining:
+- Là Method trả về Object, và gọi tới Method khác,... 
+
+3. Tại sao lại Code tay thay vì dùng NetBeans?
+- Design thế nào thì chạy lên như vậy.
+- Code Netbeans tự sinh khó sử dụng.
+
+4. Layout là thành phần cuối cùng quyết định kích thước component ==> Giá trị set manual cho component sẽ bị thay đổi khi quăng vào Layout.
+
+5. Flow Layout:
+- Khi thu nhỏ chiều ngang sẽ tự động "rớt" xuống cho thành dọc (Giống Responsive Design)
+
+6. Grid Layout:
+- Kích thước component phải giãn ra cho đầy kích thước ô.
+- Từ Java 1.6, nếu kích thước vượt quá ban đầu thì tự động tăng CỘT.
+- Khi chỉnh kích thước của Grid Layout thì nó sẽ tự động điều chỉnh.
+- Trong Constructor "chuẩn" của GridLayout có 4 tham số (cols, rows, hgap, vgap). Nếu muốn cho khoảng cách giữa các thành phần cách ra thì chỉnh "hgap" và "vgap"
+
+7. Border Layout
+- Đa số các loại ứng dụng sử dụng layout này.
+
+8. Null Layout:
+- Sử dụng Pixel để canh chỉnh. Không khuyến khích vì mỗi máy tính khác nhau sẽ khác nhau.
+
+BT: 
+8. Card Layout
+- Thay thế cho Tabbed Layout
+
+9. Grid Bag Layout
+- Phức tạp nhất ==> Ít code hơn.
+	+ Cơ bản là Grid, bố trí component trên ô.
+	+ Component có thể nằm trên nhiều ô
+	+ Component có kích thước ko kéo theo ô.
+
+- Inset <==> Margin
+- ipadx, ipady <==> Padding
+
+10. Phương thức show() sẽ bị depricated.
+
+Semantic.

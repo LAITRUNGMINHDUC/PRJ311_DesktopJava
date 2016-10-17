@@ -1,0 +1,18 @@
+1. Internationalization --> i18n
+	- 
+2. Localization --> l10n.
+	- Là thêm các Resource
+		+ Language
+		+ DateTime
+		+ Currency
+		+ Thousand separator
+
+3. Phải có i18n thì mới có l10n
+
+4. Định dạng file *.properties là dạng file Text, chứa <Key, Value>.
+
+5. Quy tắc đặt tên: prefix_language_NATION.properties
+
+6. Locale = Nation + Language
+
+7. 

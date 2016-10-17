@@ -1,0 +1,70 @@
+1. Distributed App (Ứng dụng phân tán):
+- Networking Programming
+
+2. Công nghệ:
+- RMI: Công nghệ nền tảng chính cho JavaEE 
+- Socket: Công nghệ truyền thống có mặt trong nhiều ngôn ngữ.
+
+3. LAN/ WAN:
+- Local: không chỉ khoảng cách mà chỉ chủ sở hữu.
+- Wide: chỉ mạng của nhiều chủ sở hữu.
+
+4. Server: 
+- Không phải là MÁY --> Là tiến trình.
+
+5. Các bước trong Networking:
+- Xác định phương thức
+- Xác định địa chỉ
+- Port
+- Dữ liệu
+
+6. Logical:
+- Là biết đủ thông tin nhưng không cần quan tâm đến hạ tầng bên dưới.
+
+7. Mô hình:
+- TCP và IP
+- OSI
+
+8. TTL: Time to Live
+
+9. Socket: là điểm đầu cuối (Endpoint) giữa 2 chương trình chạy trên mạng. Nó còn là ... cổng để xác định ứng dụng mà dữ liệu được gởi đến đích.
+
+10. Nhóm Input/ Output:
+- File
+- Console
+- Socket
+
+11. Stream: là Sequence of data
++ Low-level:
+	- Thao tác trực tiếp trên file (dạng byte)
+	- Cần thao tác Encode/ Decode để convert byte và String
+
+	- Class: 
+		+ FileInput/Output Stream
+		+ FileReader/Writer
++ High-level:
+	- Không thao tác trực tiếp mà thông qua Low-level
+
+12. Các hàm Input trong C:
+- scanf() / getchar() là cơ chế buffer để người dùng nhập, xóa,... đến khi Enter/ Buffer đầy... thì xử lý
+- getch() / getche() là cơ chế không buffer --> thực thi ngay.
+
+13. Bản chất của việc nhận/ gởi data giữa 2 tiến trình là đọc/ ghi trên socket của mình.
+
+14. Cơ chế Socket dựa trên truyền thống của networking (trong ĐT).
+
+15. Flush: là hành động đẩy dữ liệu từ vùng A sang vùng B. 
+
+16. Khi close() thì java tự động flush. Có thể chạy theo kiểu flush từng dòng nhưng không khuyến khích.
+
+17. Localhost: còn được gọi là địa chỉ loopback. Dùng để kiểm tra xem card mạng có dùng được không. Địa chỉ IP là: 127.0.0.1.
+
+18. 
+- Option 1: Thực hiện chức năng SendFile
+	+ (Tạo cặp Socket)
+	+ (Tạo Protocol để nhận dạng file)
+- Option 2: Chat peer-to-peer:
+	+ (Trên Server) Dùng Map <IP, List>
+====================================================
+Danh từ "chung chung" ==> Thường dạng số nhiều.
+"Nói là trách nhiệm của mình, và hiểu là trách nhiệm của người khác."
